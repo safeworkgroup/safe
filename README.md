@@ -1,4 +1,11 @@
-# safe
-Secure Archive for eLearning (SAfe)
+# Secure Archive for eLearning (SAfe)
 
-The purpose of this project is to define an open source format for storing and exchanging content for eLearning purposes. 
+## Overview
+This project defines an open source format, called **Secure Archive for eLearning (SAfe)**, for storing and exchanging eLearning content.  It also offers a library of reference implementations written in various popular programming languages to facilitate developers interested in supporting the SAfe format in their applications.
+
+The characteristics of the SAfe format are
+* Open source
+* Lightweight
+* Extensible
+* Secure
+* Language agnostic
