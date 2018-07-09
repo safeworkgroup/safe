@@ -26,8 +26,8 @@ The defining characteristics of the SAfe format are:
   "mac" : "[HMAC]"
 }
 ```
-  1. [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID Version 5 is used by default.
-  2. [RFC 4648](https://tools.ietf.org/html/rfc4648) Base64 encoding is used by default.
-  3. [RFC 2104](https://tools.ietf.org/html/rfc2104) HMAC-SHA1 is used by default.
+   1. [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID Version 5 is used by default.
+   2. [RFC 4648](https://tools.ietf.org/html/rfc4648) Base64 encoding is used by default.
+   3. [RFC 2104](https://tools.ietf.org/html/rfc2104) HMAC-SHA1 is used by default.
   
 4. A SAfe object can include the following **OPTIONAL** name/value pairs to  
