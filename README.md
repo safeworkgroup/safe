@@ -16,7 +16,7 @@ The defining characteristics of the SAfe format are:
 ## Specifications
 1. SAfe is a subset of JSON (JavaScript Object Notation). Therefore, any valid SAfe document must also be a valid JSON document.
 
-2. Any JSON value (*object, array, number, string, `true`, `false`, and `null`*) can be transformed into a SAfe object.
+2. Any JSON value (*object, array, number, string, `true`, `false`, and `null`*) can be encrypted into a SAfe object.
 
 3. A SAfe object is a JSON object with the following **REQUIRED** name/value pairs:
 ```javascript
@@ -26,8 +26,8 @@ The defining characteristics of the SAfe format are:
   "mac" : "[HMAC]"
 }
 ```
-   1. [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID Version 5 is used by default.
-   2. [RFC 4648](https://tools.ietf.org/html/rfc4648) Base64 encoding is used by default.
-   3. [RFC 2104](https://tools.ietf.org/html/rfc2104) HMAC-SHA1 is used by default.
+  - [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID Version 5 is used by default.
+  - [RFC 4648](https://tools.ietf.org/html/rfc4648) Base64 encoding is used by default.
+  - [RFC 2104](https://tools.ietf.org/html/rfc2104) HMAC-SHA1 is used by default.
   
-4. A SAfe object can include the following **OPTIONAL** name/value pairs to  
+4. A SAfe object can include the following **OPTIONAL** name/value pairs to facilitate the decryption process:
