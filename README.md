@@ -31,8 +31,8 @@ The defining characteristics of the SAfe format are:
   
 4. A SAfe object can include one or more of the following **OPTIONAL** name/value pairs to facilitate the decryption process:
 ```javascript
-  "oid" : "[Object identifier]",
-  "key" : "[KeySAfe configuration object]"
+  "cup" : "[Common usage pattern]",
+  "key" : {[KeySAfe configuration object]}
 ```
 
 5. A SAfe object can also include one or more custom name/value pairs   
