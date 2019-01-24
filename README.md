@@ -5,24 +5,20 @@ This project defines an open source format, called **Secure Archive for eLearnin
 
 The SAfe Workgroup, which comprises of authors, educators, researchers, and developers from various fields of study, is responsible for maintaining the SAfe format specifications. It is the mission of the SAfe Workgroup to build a platform that promotes the creation, distribution, and consumption of eLearning content in a flexible yet secure manner. 
 
-The defining characteristics of the SAfe format are:
-* Open source
-* Lightweight
-* Extensible
-* Secure
-* ECMAScript friendly
-* Human readable
+The SAfe format is designed to provide any eLearning content with the following properties:
+* Security: Includes content encryption to prevent unauthorized access as well as authentication to ensure content integrity. 
+* Inteoperability: Allows content to be shared across multiple content management/delivery systems. 
+* Analytics: Enables real-time content usage tracking.
 
-## Specifications
+## Version 1 Specifications
 1. SAfe is a subset of JSON (JavaScript Object Notation). Therefore, any valid SAfe document must also be a valid JSON document.
 
-2. Any JSON value (*object, array, number, string, `true`, `false`, and `null`*) can be encrypted into a SAfe object.
-
-3. A SAfe object is a JSON object with the following **REQUIRED** name/value pairs:
+2. A SAfe object is a JSON object with the following **REQUIRED** name/value pairs:
 ```javascript
-  "uid" : "[Universally unique identifier]",
+  "uid" : "[Unique identifier]",
+  "oid" : "[Object identifier]",
   "b64" : "[Base64-encoded encrypted JSON value]",
-  "mac" : "[HMAC]"
+  "mac" : "[Message authentication code]"
 ```
   - [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID Version 5 is used by default.
   - [RFC 4648](https://tools.ietf.org/html/rfc4648) Base64 encoding is used by default.
