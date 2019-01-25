@@ -24,15 +24,16 @@ This section specifies the basic building block and overall structure of the SAf
 
 3. A SAfe object ***MAY*** include one or more custom name/value pairs for application-specific purposes.
 
-4. [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID Version 5 is used by default for the ```javascript"uid"``` value. It ***MUST*** universally uniquely identifies the SAfe object.
+4. [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID Version 5 is used by default for the `"uid"` value. It ***MUST*** universally uniquely identifies the SAfe object.
 
-5. The ```javascript"tid"``` value is defined in the following sections. It ***MUST*** provides type information regarding the ```javascript"obj"``` value.
+5. The `"tid"` value is defined in the following sections. It ***MUST*** provides type information regarding the `"obj"` value.
 
-6. The ```javascript"obj"``` value contains the content of the SAfe object. It ***MUST*** matches the type information specified in the ```javascript"tid"``` value. It ***MUST*** be a valid JSON object (*object, array, number, string, `true`, `false`, and `null`*) or a SAfe object.
+6. The `"obj"` value contains the content of the SAfe object. It ***MUST*** matches the type information specified in the `"tid"` value. It ***MUST*** be a valid JSON object (*object, array, number, string, `true`, `false`, and `null`*) or a SAfe object.
 
 ## Version 1 Type Identifier Specification
-The ```javascript"tid"``` type identifier is the most important component of the SAfe format. It specifies how the ```javascript"obj"``` value is to be intepreted, processed, and/or displayed.
+The `"tid"` type identifier is the most important component of the SAfe format. It specifies how the `"obj"` value is to be intepreted, processed, and/or displayed.
 
+1. 
 
   - [RFC 4648](https://tools.ietf.org/html/rfc4648) Base64 encoding is used by default.
   - [RFC 3602](https://tools.ietf.org/html/rfc3602) AES cipher in CBC mode is used by default.
