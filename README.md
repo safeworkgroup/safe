@@ -28,7 +28,7 @@ This section specifies the basic building block and overall structure of the SAf
 
 5. The ```javascript"tid"``` value is defined in the following sections. It ***MUST*** provides type information regarding the ```javascript"obj"``` value.
 
-6. The ```javascript"obj"``` value contains the content of the SAfe object. It ***MUST*** matches the type information specified in the ```javascript"tid"``` value. It ***MUST*** be a valid JSON object () or a SAfe object.
+6. The ```javascript"obj"``` value contains the content of the SAfe object. It ***MUST*** matches the type information specified in the ```javascript"tid"``` value. It ***MUST*** be a valid JSON object (*object, array, number, string, `true`, `false`, and `null`*) or a SAfe object.
 
 ## Version 1 Type Identifier Specification
 The ```javascript"tid"``` type identifier is the most important component of the SAfe format. It specifies how the ```javascript"obj"``` value is to be intepreted, processed, and/or displayed.
